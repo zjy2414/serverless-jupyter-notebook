@@ -58,7 +58,7 @@
 
 # 应用详情
 
-Jupyter Notebook是基于网页的用于交互计算的应用程序。其可被应用于全过程计算：开发、文档编写、运行代码和展示结果。本应用旨在提供一种在serverless上运行Jupyter Notebook的方法。
+Jupyter Notebook是基于网页的用于交互计算的应用程序，用户可以在网页中直接编写代码和运行代码，代码的运行结果也会直接在代码块下显示。本应用旨在提供一种在 serverless 架构上运行 Jupyter Notebook 的方法。
 
 ## 运行截图
 
