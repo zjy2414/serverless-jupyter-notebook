@@ -41,7 +41,6 @@ COPY Numpy.ipynb .
 COPY Tensorflow.ipynb .
 
 #配置
-RUN rm ~/.jupyter/jupyter_notebook_config.py
 RUN jupyter notebook --generate-config
 RUN echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py
 RUN echo "c.NotebookApp.ip = '*'" >> ~/.jupyter/jupyter_notebook_config.py
