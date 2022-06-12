@@ -1,34 +1,4 @@
-FROM registry.cn-shanghai.aliyuncs.com/zjy2414/miniconda3:4.11.0
-
-#切换镜像为阿里云源
-WORKDIR /etc/apt
-RUN rm sources.list
-COPY sources.list .
-
-#设置conda为清华园
-RUN conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-RUN conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-RUN conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-RUN conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
-RUN conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
-RUN conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
-RUN conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
-
-#系统更新
-RUN apt-get update
-
-#pip升级
-RUN python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip
-
-#安装jupyter
-RUN pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple jupyter
-
-#安装常用包
-RUN pip3 install numpy scipy matplotlib -i https://pypi.tuna.tsinghua.edu.cn/simple
-RUN conda install cudatoolkit=11.0
-
-#安装tensorflow
-RUN pip3 install tensorflow -i https://pypi.tuna.tsinghua.edu.cn/simple
+FROM registry.cn-shanghai.aliyuncs.com/zjy2414/my-jupyter:1.0.0
 
 #进入工作目录
 WORKDIR /mnt
