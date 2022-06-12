@@ -14,7 +14,7 @@ Service:
     Authorities:
       - AliyunFCFullAccess
     Runtime: custom container
-  容器镜像:
+  容器服务:
     Authorities:
       - AliyunContainerRegistryFullAccess
 Parameters:
