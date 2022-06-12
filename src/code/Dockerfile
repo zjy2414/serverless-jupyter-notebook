@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3:4.11.0
+FROM miniconda3:4.11.0
 
 #切换镜像为阿里云源
 WORKDIR /etc/apt
