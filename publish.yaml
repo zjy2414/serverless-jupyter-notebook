@@ -2,7 +2,7 @@ Type: Application
 Name: serverless-jupyter-notebook
 Provider:
   - 阿里云
-Version: 1.0.7
+Version: 1.0.9
 Description: 快速部署一个 Jupyter Notebook 到阿里云函数计算
 HomePage: https://github.com/zjy2414/serverless-jupyter-notebook
 Tags:
@@ -57,10 +57,10 @@ Parameters:
     functionName:
       title: 函数名
       type: string
-      default: notebook-function
+      default: jupyter-notebook
       description: 函数名称，只能包含字母、数字、下划线和中划线。不能以数字、中划线开头。长度在 1-64 之间
     acrRegistry:
       title: 镜像仓库
       type: string
-      default: registry.cn-shanghai.aliyuncs.com/zjy2414/miniconda3:4.11.0
+      default: registry.cn-shanghai.aliyuncs.com/zjy2414/python:3.9
       description: 镜像仓库地址，需要在 https://cr.console.aliyun.com/ 中开通服务、创建仓库以及设置访问凭证
