@@ -2,7 +2,7 @@ Type: Application
 Name: serverless-jupyter-notebook
 Provider:
   - 阿里云
-Version: 1.0.6
+Version: 1.0.7
 Description: 快速部署一个 Jupyter Notebook 到阿里云函数计算
 HomePage: https://github.com/zjy2414/serverless-jupyter-notebook
 Tags:
@@ -62,5 +62,5 @@ Parameters:
     acrRegistry:
       title: 镜像仓库
       type: string
-      default: registry.cn-shanghai.aliyuncs.com/zjy2414/my-jupyter:1.0.0
+      default: registry.cn-shanghai.aliyuncs.com/zjy2414/miniconda3:4.11.0
       description: 镜像仓库地址，需要在 https://cr.console.aliyun.com/ 中开通服务、创建仓库以及设置访问凭证
