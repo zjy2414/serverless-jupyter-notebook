@@ -1,14 +1,14 @@
-# serverless-jupyter 帮助
+# serverless-jupyter-notebook 帮助
 
 <p align="center" class="flex justify-center">
     <a href="https://www.serverless-devs.com" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=serverless-jupyter&type=packageType">
+    <img src="http://editor.devsapp.cn/icon?package=serverless-jupyter-notebook&type=packageType">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=serverless-jupyter" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=serverless-jupyter&type=packageVersion">
+  <a href="http://www.devsapp.cn/details.html?name=serverless-jupyter-notebook" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=serverless-jupyter-notebook&type=packageVersion">
   </a>
-  <a href="http://www.devsapp.cn/details.html?name=serverless-jupyter" class="ml-1">
-    <img src="http://editor.devsapp.cn/icon?package=serverless-jupyter&type=packageDownload">
+  <a href="http://www.devsapp.cn/details.html?name=serverless-jupyter-notebook" class="ml-1">
+    <img src="http://editor.devsapp.cn/icon?package=serverless-jupyter-notebook&type=packageDownload">
   </a>
 </p>
 
@@ -33,7 +33,8 @@
 
 # 代码 & 预览
 
-- [ :smiley_cat:  源代码](https://github.com/zjy2414/serverless-jupyter)
+- [ :smiley_cat:  源代码](https://github.com/zjy2414/serverless-jupyter-notebook)
+- [:rocket: 预览](http://jupyter.jupyter-service.1451800943597498.cn-shanghai.fc.devsapp.net)
 
 </codepre>
 
@@ -43,15 +44,15 @@
 
 <appcenter>
 
--  :fire:  通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?serverless-jupyter) ，
-[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=serverless-jupyter) 该应用。 
+-  :fire:  通过 [Serverless 应用中心](https://fcnext.console.aliyun.com/applications/create?serverless-jupyter-notebook) ，
+[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://fcnext.console.aliyun.com/applications/create?template=serverless-jupyter-notebook) 该应用。 
 
 </appcenter>
 
 - 通过 [Serverless Devs Cli](https://www.serverless-devs.com/serverless-devs/install) 进行部署：
     - [安装 Serverless Devs Cli 开发者工具](https://www.serverless-devs.com/serverless-devs/install) ，并进行[授权信息配置](https://www.serverless-devs.com/fc/config) ；
-    - 初始化项目：`s init serverless-jupyter -d serverless-jupyter`   
-    - 进入项目，并进行项目部署：`cd serverless-jupyter && s deploy -y`
+    - 初始化项目：`s init serverless-jupyter-notebook -d serverless-jupyter-notebook`   
+    - 进入项目，并进行项目部署：`cd serverless-jupyter-notebook && s deploy -y`
 
 </deploy>
 
