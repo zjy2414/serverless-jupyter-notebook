@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3
+FROM registry.cn-shanghai.aliyuncs.com/zjy2414/miniconda3:4.11.0
 
 #切换镜像为阿里云源
 WORKDIR /etc/apt
@@ -41,6 +41,7 @@ COPY Numpy.ipynb .
 COPY Tensorflow.ipynb .
 
 #配置
+RUN rm ~/.jupyter/jupyter_notebook_config.py
 RUN jupyter notebook --generate-config
 RUN echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py
 RUN echo "c.NotebookApp.ip = '*'" >> ~/.jupyter/jupyter_notebook_config.py
