@@ -1,0 +1,49 @@
+edition: 1.0.0
+name: serverless-jupyter-notebook
+access: "{{ access }}"
+
+vars: # 全局变量
+  region: "{{ region }}"
+  service:
+    name: "{{ serviceName }}"
+    description: 'hello world by serverless devs'
+
+services:
+  jupyter:
+    component: fc
+    actions: # 自定义执行逻辑，关于actions 的使用，可以参考：https://www.serverless-devs.com/serverless-devs/yaml#行为描述
+      pre-deploy:
+        - component: fc build --use-docker --dockerfile ./code/Dockerfile
+    props:
+      region: ${vars.region}
+      service: ${vars.service}
+      function:
+        name: "{{ functionName }}"
+        description: 'hello world by serverless devs'
+        caPort: 9000
+        memorySize: 2048
+        timeout: 60
+        runtime: custom-container
+        customContainerConfig:
+          image: "{{ acrRegistry }}"
+        codeUri: ./code
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*
+              methods:
+                - GET
+                - POST
+                - PUT
+                - DELETE
