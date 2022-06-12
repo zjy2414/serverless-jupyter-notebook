@@ -23,6 +23,8 @@ services:
         caPort: 9000
         memorySize: 2048
         timeout: 120
+        maxAsyncEventAgeInSeconds: 1000
+        instanceType: e1
         runtime: custom-container
         customContainerConfig:
           image: "{{ acrRegistry }}"
