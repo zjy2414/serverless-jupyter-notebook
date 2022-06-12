@@ -62,11 +62,11 @@ Jupyter Notebook是基于网页的用于交互计算的应用程序。其可被�
 
 ## 运行截图
 
-<img src="https://github.com/zjy2414/serverless-jupyter-notebook/blob/main/snapshot/img1.png" alt="home">
+<img src="https://7463-tcb-nkd87viq9wheg653bca0d-a8621b-1304207482.tcb.qcloud.la/Serverless-Jupyter/img1.png" alt="home">
 
-<img src="https://github.com/zjy2414/serverless-jupyter-notebook/blob/main/snapshot/img2.png" alt="matplot">
+<img src="https://7463-tcb-nkd87viq9wheg653bca0d-a8621b-1304207482.tcb.qcloud.la/Serverless-Jupyter/img2.png" alt="matplot">
 
-<img src="https://github.com/zjy2414/serverless-jupyter-notebook/blob/main/snapshot/img3.png" alt="numpy">
+<img src="https://7463-tcb-nkd87viq9wheg653bca0d-a8621b-1304207482.tcb.qcloud.la/Serverless-Jupyter/img3.png" alt="numpy">
 
 
 </appdetail>
