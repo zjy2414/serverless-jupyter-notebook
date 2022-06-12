@@ -17,7 +17,7 @@ RUN conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cl
 #系统更新
 RUN apt-get update
 
-#pip升级 /usr/local/bin/
+#pip升级
 RUN python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pip
 
 #安装jupyter
