@@ -18,7 +18,7 @@ RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple jupyter
 RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple numpy scipy matplotlib
 
 #安装tensorflow
-RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple tensorflow
+# RUN pip3 install -i https://mirrors.aliyun.com/pypi/simple tensorflow
 
 #进入工作目录
 WORKDIR /mnt
@@ -28,7 +28,7 @@ VOLUME /mnt
 
 #复制例程
 COPY Numpy.ipynb .
-COPY Tensorflow.ipynb .
+# COPY Tensorflow.ipynb .
 COPY Matplot.ipynb .
 
 #配置
