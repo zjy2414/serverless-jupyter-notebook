@@ -21,10 +21,10 @@ services:
         name: "{{ functionName }}"
         description: 'hello world by serverless devs'
         caPort: 9000
-        memorySize: 2048
+        memorySize: 4096
         timeout: 120
         maxAsyncEventAgeInSeconds: 1000
-        instanceType: e1
+        instanceType: "{{ instanceType }}" # 函数实例类型，可选值为：e1（弹性实例）、c1（性能实例）
         runtime: custom-container
         customContainerConfig:
           image: "{{ acrRegistry }}"
