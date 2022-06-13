@@ -36,6 +36,8 @@
 - [ :smiley_cat:  源代码](https://github.com/zjy2414/serverless-jupyter-notebook)
 - [:rocket: 预览](http://jupyter-notebook.jupyter-service.1451800943597498.cn-shanghai.fc.devsapp.net/)
 
+</codepre>
+
 <deploy>
 
 ## 部署 & 体验
@@ -59,6 +61,8 @@
 # 应用详情
 
 Jupyter Notebook是基于网页的用于交互计算的应用程序，用户可以在网页中直接编写代码和运行代码，代码的运行结果也会直接在代码块下显示。本应用旨在提供一种在 serverless 架构上运行 Jupyter Notebook 的方法。
+
+注意：首次启动可能需要等待较长时间
 
 ## 运行截图
 
