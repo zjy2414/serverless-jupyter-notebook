@@ -28,8 +28,8 @@ VOLUME /mnt
 
 #复制例程
 COPY Numpy.ipynb .
-COPY Matplot.ipynb .
 COPY Tensorflow.ipynb .
+COPY Matplot.ipynb .
 
 #配置
 RUN jupyter notebook --generate-config
