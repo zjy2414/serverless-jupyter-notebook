@@ -2,7 +2,7 @@ Type: Application
 Name: serverless-jupyter-notebook
 Provider:
   - 阿里云
-Version: 1.1.6
+Version: 1.1.7
 Description: 快速部署一个 Jupyter Notebook 到阿里云函数计算
 HomePage: https://github.com/zjy2414/serverless-jupyter-notebook
 Tags:
@@ -26,6 +26,7 @@ Parameters:
     - functionName
     - instanceType
     - acrRegistry
+    - memorySize
   properties:
     region:
       title: 地域
@@ -70,6 +71,19 @@ Parameters:
       enum:
         - e1
         - c1
+    memorySize:
+      title: 内存大小
+      type: string
+      default: 2048
+      description: 选择内存大小，弹性实例请选择3072以下、性能实例请选择4096及以上
+      enum:
+        - 1024
+        - 2048
+        - 3072
+        - 4096
+        - 8192
+        - 16384
+        - 32768
     acrRegistry:
       title: 镜像仓库
       type: string
