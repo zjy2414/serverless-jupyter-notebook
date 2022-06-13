@@ -68,6 +68,8 @@ Jupyter Notebook是基于网页的用于交互计算的应用程序，用户可�
 
 <img src="https://7463-tcb-nkd87viq9wheg653bca0d-a8621b-1304207482.tcb.qcloud.la/Serverless-Jupyter/img3.png" alt="numpy">
 
+<img src="https://7463-tcb-nkd87viq9wheg653bca0d-a8621b-1304207482.tcb.qcloud.la/Serverless-Jupyter/img4.png" alt="scipy">
+
 
 </appdetail>
 
