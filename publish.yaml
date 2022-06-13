@@ -89,4 +89,4 @@ Parameters:
       type: string
       default: 
       examples: ['registry.cn-shanghai.aliyuncs.com/zjy2414/myjupyter:v1.0']
-      description: 镜像仓库地址，需要在 https://cr.console.aliyun.com/ 中开通服务、创建仓库以及设置访问凭证
+      description: 镜像仓库地址，需要在 https://cr.console.aliyun.com/ 中开通服务、创建仓库(myjupyter)以及设置访问凭证
