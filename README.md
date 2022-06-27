@@ -34,7 +34,7 @@
 # 代码 & 预览
 
 - [ :smiley_cat:  源代码](https://github.com/zjy2414/serverless-jupyter-notebook)
-- [:rocket: 预览](http://jupyter-notebook.jupyter-service.1451800943597498.cn-shanghai.fc.devsapp.net/)
+- [:rocket: 预览](http://jupyter-notebook.jupyter-service.1451800943597498.cn-hangzhou.fc.devsapp.net/)
 
 </codepre>
 
