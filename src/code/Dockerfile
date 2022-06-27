@@ -36,6 +36,10 @@ RUN pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple matplotlib==3.5.2
 #安装tensorflow
 # RUN pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow
 
+# 删除安装包
+RUN rm numpy-1.23.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+RUN rm scipy-1.8.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+
 #复制例程
 COPY Numpy.ipynb .
 # COPY Tensorflow.ipynb .
